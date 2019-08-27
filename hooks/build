@@ -1,0 +1,2 @@
+#!/bin/sh
+docker build --build-arg GRPC_BUILD_VERSION=0.1 -t ${IMAGE_NAME} -f ${DOCKERFILE_PATH} .
