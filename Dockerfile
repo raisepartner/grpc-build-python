@@ -11,6 +11,6 @@ COPY --from=CPP /usr/local/include/* /usr/local/include/
 COPY --from=CPP /usr/local/bin/protoc /usr/local/bin/
 
 RUN pip install -U pip \
-  && pip install grpcio grpcio-tools
+  && pip install grpcio grcio-tools
 
 COPY pip.conf /etc/pip.conf
