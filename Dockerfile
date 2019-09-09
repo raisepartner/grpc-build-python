@@ -7,7 +7,7 @@ FROM python:3.7-buster
 # install grpc
 COPY --from=CPP /usr/local/lib/libgrpc*.so.*.* /usr/local/lib/
 COPY --from=CPP /usr/local/include/* /usr/local/include/
-COPY --from=CPP /usr/local/bin/protoc /usr/local/bin/
+COPY --from=CPP /usr/local/bin/* /usr/local/bin/
 
 # HACK: re-create symlinks for grpc libs (COPY would break ld)
 RUN cd /usr/local/lib/ \
