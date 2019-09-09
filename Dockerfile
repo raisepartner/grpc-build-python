@@ -1,4 +1,4 @@
-ARG GRPC_BUILD_VERSION=0.1
+ARG GRPC_BUILD_VERSION=latest
 
 FROM raisepartner/grpc-build-cpp:${GRPC_BUILD_VERSION} as CPP
 
